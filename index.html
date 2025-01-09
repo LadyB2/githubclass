@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dance RSVP & Vote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the School Dance</h1>
+        <p>Get ready for a night full of fun! RSVP and vote for your favorite music.</p>
+    </header>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section">
+        <h2>RSVP for the Dance</h2>
+        <form id="rsvp-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="attending">Will you attend?</label>
+            <select id="attending" required>
+                <option value="yes">Yes, I will attend!</option>
+                <option value="no">No, I can't make it.</option>
+            </select>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+        <p id="rsvp-status"></p>
+    </section>
+
+    <!-- Music Vote Section -->
+    <section class="music-vote">
+        <h2>Vote for Your Favorite Song!</h2>
+        <form id="music-vote-form">
+            <label for="song">Choose a song:</label>
+            <select id="song" required>
+                <option value="song1">Dance Hits</option>
+                <option value="song2">Top 40</option>
+                <option value="song3">Pop Classics</option>
+            </select>
+            <button type="submit">Submit Vote</button>
+        </form>
+        <p id="music-vote-status"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 School Dance Event</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
